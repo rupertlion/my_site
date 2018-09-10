@@ -5,4 +5,6 @@
     - data.projects.each do |project|
         %h4= project[:name]
         %p= project[:description]
-        %img{:src => project[:image], :href => project[:url]}
+        %a{:href => project[:url] }
+            %img{:src => project[:image] }
+            
