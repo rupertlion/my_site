@@ -1,8 +1,3 @@
-- name: My First Website
-  description: Simple HTML5 site
-  image: images/laptop_scene.jpg
-  url: 
-  
 - name: FizzBuzz
   description: Test driven Ruby project number game
   image: images/Water_bubbles.jpg
@@ -27,3 +22,9 @@
   description: Ruby-based ATM simulator
   image: images/ATM.jpg
   url: https://github.com/rupertlion/atm_challenge
+
+- name: My First Website
+  description: Simple HTML5 site
+  image: images/laptop_scene.jpg
+  url: 
+  
