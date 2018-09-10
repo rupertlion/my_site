@@ -1,6 +1,23 @@
 - name: My First Website
-  description: Simple HTML5 site I've build during the PrepCourse
+  description: Simple HTML5 site
   image: images/laptop_scene.jpg
   
 - name: FizzBuzz
-  description: My first Test driven ruby project
+  description: Test driven Ruby project number game
+  image: images/Water_bubbles.jpg
+
+- name: Address Book
+  description: Contact address book using Javascript
+  image: images/address-book.jpg
+
+- name: Library
+  description: Library replication in Ruby
+  image: images/Library.jpg
+
+- name: BMI Calculator
+  description: Simple BMI calculator in Javascript
+  image: images/BMI.jpg
+
+- name: ATM Simulator
+  description: Ruby-based ATM simulator
+  image: images/ATM.jpg
