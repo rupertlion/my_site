@@ -7,7 +7,7 @@
   grid-template-columns: auto
   grid-template-rows: auto auto auto auto auto auto
   grid-template-areas: "intro" "aboutme" "summary" "history" "work" "contact"
-  max-width: 1280px
+  max-width: auto
   font-family: -apple-system, BlinkMacSystemFont, sans-serif
   color: white
 
@@ -15,14 +15,17 @@
     grid-area: intro
     display: grid
     grid-template-columns: auto auto
-    grid-template-areas: "logo" "face"
-  
-  .logo
-    grid-area: logo
+    grid-template-rows: 1fr
+    grid-template-areas: "logo face"
+    justify-items: center
 
-  .face
-    grid-area: face
+    .logo
+      grid-area: logo
+      align-items: center
+      justify-items: center
 
+    .face
+      grid-area: face
 
   .aboutme
     grid-area: aboutme
@@ -39,8 +42,11 @@
   .contact
     grid-area: contact
   
+  .box
+    padding-top: 110px
 
-
+  .tag
+    padding-left: 10px
 
 // .body
 //   background-color: #000000
