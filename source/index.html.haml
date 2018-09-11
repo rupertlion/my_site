@@ -1,9 +1,16 @@
 = partial 'partials/navigation'
-.logodesign
-    %img{:src => "images/rupert_face.jpg"}
-        %img{:src => "images/rupert_logo.png"}
-        %h3 CREATE / SOLVE / INNOVATE
 
-= partial 'partials/aboutme'
-= partial 'partials/projects'
-= partial 'partials/cv'
+.wrapper
+    .logodesign
+        %img{:src => "images/rupert_face.jpg"}
+            %img{:src => "images/rupert_logo.png"}
+            %h3 CREATE / SOLVE / INNOVATE
+
+    .intro
+        = partial 'partials/aboutme'
+    .aboutme
+    .summary
+    .history
+        = partial 'partials/projects'
+    .work
+        = partial 'partials/cv'

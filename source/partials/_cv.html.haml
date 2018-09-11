@@ -5,6 +5,7 @@
     - data.cv.each do |project|
         %h4= project[:role]
         %h2= project[:description]
-        %img{:src => project[:logo] }
-        %img{:src => project[:image] }
-        %h3= project[:years]
+        %img{src: project[:logo] }
+            #mycvphoto
+                %img{src: project[:image] }
+            %h3= project[:years]
