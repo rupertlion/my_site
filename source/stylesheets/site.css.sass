@@ -6,7 +6,7 @@
   display: grid
   grid-template-columns: auto
   grid-template-rows: auto auto auto auto auto auto
-  grid-template-areas: "intro" "aboutme" "summary" "history" "work" "contact"
+  grid-template-areas: "intro" "aboutme" "summaryintro" "summary" "history" "work" "contact"
   max-width: auto
   font-family: -apple-system, BlinkMacSystemFont, sans-serif
   color: white
@@ -30,8 +30,29 @@
   .aboutme
     grid-area: aboutme
 
+  .summaryintro
+    grid-area: summaryintro
+    text-align: center
+
   .summary
     grid-area: summary
+    display: grid
+    grid-template-columns: auto auto auto
+    grid-template-rows: 1fr
+    grid-template-areas: "sum1 sum2 sum3"
+    text-align: center
+
+    .skills
+      grid-area: sum1
+      text-align: center
+
+    .loves
+      grid-area: sum2
+      text-align: center
+
+    .passions
+      grid-area: sum3
+      text-align: center
 
   .history
     grid-area: history
@@ -47,40 +68,3 @@
 
   .tag
     padding-left: 10px
-
-// .body
-//   background-color: #000000
-//   color: rgb(255, 255, 255)
-//   font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif
-//   padding: 18vh 1rem
-//   text-align: center
-
-// .html
-//   background: url(images/rupert_face.jpg) no-repeat center center fixed
-
-// .hr
-//   text-align: center
-//   border-bottom: 5px solid white
-
-// .myworkphoto
-//   object-fit: cover
-//   object-position: 100% 0
-//   height: 270px
-//   width: 360px
-//   padding: 0px 
-
-// #mycvphoto
-//   object-fit: cover
-//   object-position: 100%
-//   height: 400px
-//   width: 400px
-
-  
-// .myphoto
-//   object-fit: cover
-//   object-position: 100% 0
-//   height: auto
-//   width: auto
-//   max-width: 400px
-//   max-height: 800px
-//   padding: 10px
