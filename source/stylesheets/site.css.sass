@@ -5,8 +5,8 @@
   background-color: #000000
   display: grid
   grid-template-columns: auto
-  grid-template-rows: auto auto auto auto auto auto
-  grid-template-areas: "intro" "aboutme" "summaryintro" "summary" "history" "work" "contact"
+  grid-template-rows: auto auto auto auto auto
+  grid-template-areas: "intro" "summaryintro" "summary" "history" "work" "contact"
   max-width: auto
   font-family: -apple-system, BlinkMacSystemFont, sans-serif
   color: white
@@ -27,12 +27,17 @@
     .face
       grid-area: face
 
-  .aboutme
-    grid-area: aboutme
 
-  .summaryintro
-    grid-area: summaryintro
-    text-align: center
+
+  // .summaryintro
+  //   grid-area: summaryintro
+  //   text-align: center
+  //   padding-left: 110px
+  //   padding-right: 110px
+  //   padding-top: 15px
+  //   padding-bottom: 15px
+  
+
 
   .summary
     grid-area: summary
@@ -56,6 +61,7 @@
 
   .history
     grid-area: history
+    text-align: center
 
   .work
     grid-area: work
@@ -68,3 +74,17 @@
 
   .tag
     padding-left: 10px
+
+  .aboutme
+    text-align: left
+    padding-left: 5px
+    padding-top: 45px
+
+  .linecenter
+    display: block
+    height: 1px
+    width: 75px
+    border: 0
+    border-top: 1px solid #ccc
+    padding: 0
+    text-align: center

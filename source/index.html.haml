@@ -7,14 +7,17 @@
                 %img{:src => "images/rupert_logo.png"}
             .tag
                 %h3 CREATE / SOLVE / INNOVATE
+            .aboutme
+                = partial 'partials/aboutme'
         .face
             %img{:src => "images/rupert_face.jpg"}
 
-    .aboutme
-        = partial 'partials/aboutme'
 
-    .summaryintro
-        %h1 Rupert is a digital enthusiast currently living in Stockholm
+    -# .summaryintro
+    -#     = partial 'partials/summaryintro'
+    
+    -# .aboutme
+    -#     = partial 'partials/aboutme'
 
     .summary
         = partial 'partials/summary'
