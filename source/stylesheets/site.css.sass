@@ -1,12 +1,47 @@
+.body
+  margin: 0
+  
 .wrapper
+  background-color: #000000
   display: grid
-  grid-template-columns: 1fr 1fr 1fr
+  grid-template-columns: auto
   grid-template-rows: auto auto auto auto auto auto
   grid-template-areas: "intro" "aboutme" "summary" "history" "work" "contact"
+  max-width: 1280px
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif
+  color: white
+
+  .intro
+    grid-area: intro
+    display: grid
+    grid-template-columns: auto auto
+    grid-template-areas: "logo" "face"
+  
+  .logo
+    grid-area: logo
+
+  .face
+    grid-area: face
 
 
+  .aboutme
+    grid-area: aboutme
+
+  .summary
+    grid-area: summary
+
+  .history
+    grid-area: history
+
+  .work
+    grid-area: work
+
+  .contact
+    grid-area: contact
   
-  
+
+
+
 // .body
 //   background-color: #000000
 //   color: rgb(255, 255, 255)
