@@ -7,7 +7,7 @@
   display: grid
   grid-template-columns: auto
   grid-template-rows: auto auto auto auto auto
-  grid-template-areas: "intro" "summaryintro" "summary" "history" "work" "contact"
+  grid-template-areas: "intro" "summaryintro" "summary" "history" "projects" "contact"
   max-width: auto
   font-family: -apple-system, BlinkMacSystemFont, sans-serif
   color: white
@@ -54,22 +54,41 @@
         grid-area: sum3
         text-align: center
 
-    .history
+    .cv
       grid-area: history
       text-align: center
       padding-top: 0px
       padding-bottom: 25px
 
-      .cv
+      .cv_grid
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr))
+
+        .cv_card
+          img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            max-height: 240px
+            max-width: auto
+
+    .projects
+      grid-area: projects
+      text-align: center
+      padding-top: 0px
+      padding-bottom: 25px
+
+      .project_grid
         display: grid
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr))
 
         .project_card
-
-    .work
-      grid-area: work
-      padding-top: 0px
-      padding-bottom: 25px
+          img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            max-height: 240px
+            max-width: auto
 
     .contact
       grid-area: contact

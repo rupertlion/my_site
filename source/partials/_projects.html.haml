@@ -1,10 +1,12 @@
-.history
+.projects
     %h2 MY WORK
     .linecenter
-    .projects
+    .project_grid
         - data.projects.each do |project|
-            %h4= project[:name]
-            %p= project[:description]
-            %a{:href => project[:url] }
-                %img{:src => project[:image] }
-            
+            .project_card{id:"#{project.id}"}
+                %h4= project[:role]
+                %h2= project[:description]
+                %img{src: project[:logo] }
+                    #myprojectphoto
+                        %img{src: project[:image] }
+                    %h3= project[:years]
