@@ -1,34 +1,34 @@
-- id: image_projects_1
+- id: projects_1
   name: FizzBuzz
   description: Test driven Ruby project number game
   image: images/Water_bubbles.jpg
   url: https://rupertlion.github.io/fizzbuzz_temp_deployment/
 
-- id: image_projects_2
+- id: projects_2
   name: Address Book
   description: Contact address book using Javascript
   image: images/address-book.jpg
   url: https://rupertlion.github.io/
 
-- id: image_projects_3
+- id: projects_3
   name: Library
   description: Library replication in Ruby
   image: images/Library.jpg
   url: https://github.com/rupertlion/library-challenge
 
-- id: image_projects_4
+- id: projects_4
   name: BMI Calculator
   description: Simple BMI calculator in Javascript
   image: images/BMI.jpg
   url: https://github.com/rupertlion/BMI_Challenge
 
-- id: image_projects_5
+- id: projects_5
   name: ATM Simulator
   description: Ruby-based ATM simulator
   image: images/ATM.jpg
   url: https://github.com/rupertlion/atm_challenge
 
-- id: image_projects_6
+- id: projects_6
   name: My First Website
   description: Simple HTML5 site
   image: images/laptop_scene.jpg
