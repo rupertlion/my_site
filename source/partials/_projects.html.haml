@@ -1,0 +1,10 @@
+.history
+    %h2 MY WORK
+    .linecenter
+    .projects
+        - data.projects.each do |project|
+            %h4= project[:name]
+            %p= project[:description]
+            %a{:href => project[:url] }
+                %img{:src => project[:image] }
+            

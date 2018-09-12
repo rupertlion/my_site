@@ -1,0 +1,12 @@
+.history
+    %h2 MY HISTORY
+    .linecenter
+    .cv
+        - data.cv.each do |project|
+            -# %id: {project.[:id]}
+            %h4= project[:role]
+            %h2= project[:description]
+            %img{src: project[:logo] }
+                #mycvphoto
+                    %img{src: project[:image] }
+                %h3= project[:years]

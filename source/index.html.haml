@@ -1,0 +1,26 @@
+= partial 'partials/navigation'
+
+.wrapper
+    .gridmarginwrapper
+        .intro
+            .logo
+                .box
+                    %img{:src => "images/rupert_logo.png"}
+                .tag
+                    %h3 CREATE / SOLVE / INNOVATE
+                .aboutme
+                    = partial 'partials/aboutme'
+            .face
+                %img{:src => "images/rupert_face.jpg"}
+
+        .summary
+            = partial 'partials/summary'
+
+        .history
+            = partial 'partials/cv'
+
+        .work
+            = partial 'partials/projects'
+
+        .contact
+            = partial 'partials/contact'

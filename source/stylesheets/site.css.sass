@@ -1,0 +1,132 @@
+.body
+  margin: 0
+
+// Full size grid  
+.wrapper
+  background-color: #000000
+  display: grid
+  grid-template-columns: auto
+  grid-template-rows: auto auto auto auto auto
+  grid-template-areas: "intro" "summaryintro" "summary" "history" "work" "contact"
+  max-width: auto
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif
+  color: white
+
+  .gridmarginwrapper
+    margin-left: 40px
+    margin-right: 40px
+
+    .intro
+      grid-area: intro
+      display: grid
+      grid-template-columns: auto auto
+      grid-template-rows: 1fr
+      grid-template-areas: "logo face"
+      justify-items: center
+
+      .logo
+        grid-area: logo
+        align-items: center
+        justify-items: center
+
+      .face
+        grid-area: face
+
+    .summary
+      grid-area: summary
+      display: grid
+      grid-template-columns: auto auto auto
+      grid-template-rows: 1fr
+      grid-template-areas: "sum1 sum2 sum3"
+      text-align: center
+      padding-top: 50px
+      padding-bottom: 25px
+
+      .skills
+        grid-area: sum1
+        text-align: center
+
+      .loves
+        grid-area: sum2
+        text-align: center
+
+      .passions
+        grid-area: sum3
+        text-align: center
+
+    .history
+      grid-area: history
+      text-align: center
+      // display: grid
+      // grid-template-columns: auto auto auto
+      // grid-template-rows: 200px 200px 200px
+      // grid-template-areas: "cv1 cv2 cv3" "cv4 cv5 cv6" "cv7 cv8 cv9" "cv10 cv11 cv12"
+      // text-align: center
+      padding-top: 0px
+      padding-bottom: 25px
+
+      // #cv_1
+      //   grid-area: cv1
+
+      // #cv_2
+      //   grid-area: cv2
+      
+      // #cv_3
+      //   grid-area: cv3
+
+      // #cv_4
+      //   grid-area: cv4
+
+      // #cv_5
+      //   grid-area: cv5
+
+      // #cv_6
+      //   grid-area: cv6
+      
+      // #cv_7
+      //   grid-area: cv7
+
+      // #cv_8
+      //   grid-area: cv8
+
+      // #cv_9
+      //   grid-area: cv9
+
+      // #cv_10
+      //   grid-area: cv10
+
+      // #cv_11
+      //   grid-area: cv11
+
+
+    .work
+      grid-area: work
+      padding-top: 0px
+      padding-bottom: 25px
+
+    .contact
+      grid-area: contact
+      text-align: center
+      padding-top: 0px
+      padding-bottom: 25px
+
+  //Additional CSS assets
+  .box
+    padding-top: 110px
+
+  .tag
+    padding-left: 10px
+
+  .aboutme
+    text-align: left
+    padding-left: 5px
+    padding-top: 45px
+
+  .linecenter
+    display: block
+    height: 1px
+    width: 75px
+    border: 0
+    border-top: 1px solid #ffffff
+    margin-left: auto
+    margin-right: auto 
