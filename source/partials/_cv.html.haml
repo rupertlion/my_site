@@ -4,7 +4,9 @@
     .cv_grid
         - data.cv.each do |cv|
             .cv_card{id:"#{cv.id}"}
-                %h3= cv[:description]
-                %h4= cv[:role]
-                %img{src: cv[:image] }
-                %h3= cv[:years]
+                .hover.effect-9
+                    .hover-image{:alt => "", :style => "background-image: url('#{cv[:image]}')"}
+                        %h2.hover-title= cv[:description]
+                        .hover-caption
+                            %h4= cv[:role]
+                            %p= cv[:years]

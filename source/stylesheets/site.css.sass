@@ -65,12 +65,10 @@
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr))
 
         .cv_card
-          img
+          .hover-image
             width: 100%
             height: 100%
             object-fit: cover
-            max-height: 240px
-            max-width: auto
 
     .projects
       grid-area: projects
@@ -81,6 +79,9 @@
       .project_grid
         display: grid
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr))
+        // grid-template-columns: 1fr 1fr 1fr
+        // grid-template-rows: 400px
+        // grid-template-areas: "one two three" "four five six" "seven eight nine" "ten eleven ..."
 
         .project_card
           img
@@ -89,6 +90,39 @@
             object-fit: cover
             max-height: 240px
             max-width: auto
+
+        // #cv_1
+        //   grid-area: one
+
+        // #cv_2
+        //   grid-area: two
+
+        // #cv_3
+        //   grid-area: three
+
+        // #cv_4
+        //   grid-area: four
+
+        // #cv_5
+        //   grid-area: five
+
+        // #cv_6
+        //   grid-area: six
+
+        // #cv_7
+        //   grid-area: seven
+
+        // #cv_8
+        //   grid-area: eight
+
+        // #cv_9
+        //   grid-area: nine
+
+        // #cv_10
+        //   grid-area: ten
+
+        // #cv_11
+        //   grid-area: eleven
 
     .contact
       grid-area: contact
