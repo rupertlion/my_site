@@ -12,60 +12,64 @@
   font-family: -apple-system, BlinkMacSystemFont, sans-serif
   color: white
 
-  .intro
-    grid-area: intro
-    display: grid
-    grid-template-columns: auto auto
-    grid-template-rows: 1fr
-    grid-template-areas: "logo face"
-    justify-items: center
+  .gridmarginwrapper
+    margin-left: 40px
+    margin-right: 40px
 
-    .logo
-      grid-area: logo
-      align-items: center
+    .intro
+      grid-area: intro
+      display: grid
+      grid-template-columns: auto auto
+      grid-template-rows: 1fr
+      grid-template-areas: "logo face"
       justify-items: center
 
-    .face
-      grid-area: face
+      .logo
+        grid-area: logo
+        align-items: center
+        justify-items: center
 
-  .summary
-    grid-area: summary
-    display: grid
-    grid-template-columns: auto auto auto
-    grid-template-rows: 1fr
-    grid-template-areas: "sum1 sum2 sum3"
-    text-align: center
-    padding-top: 50px
-    padding-bottom: 25px
+      .face
+        grid-area: face
 
-    .skills
-      grid-area: sum1
+    .summary
+      grid-area: summary
+      display: grid
+      grid-template-columns: auto auto auto
+      grid-template-rows: 1fr
+      grid-template-areas: "sum1 sum2 sum3"
       text-align: center
+      padding-top: 50px
+      padding-bottom: 25px
 
-    .loves
-      grid-area: sum2
+      .skills
+        grid-area: sum1
+        text-align: center
+
+      .loves
+        grid-area: sum2
+        text-align: center
+
+      .passions
+        grid-area: sum3
+        text-align: center
+
+    .history
+      grid-area: history
       text-align: center
+      padding-top: 0px
+      padding-bottom: 25px
 
-    .passions
-      grid-area: sum3
+    .work
+      grid-area: work
+      padding-top: 0px
+      padding-bottom: 25px
+
+    .contact
+      grid-area: contact
       text-align: center
-
-  .history
-    grid-area: history
-    text-align: center
-    padding-top: 0px
-    padding-bottom: 25px
-
-  .work
-    grid-area: work
-    padding-top: 0px
-    padding-bottom: 25px
-
-  .contact
-    grid-area: contact
-    text-align: center
-    padding-top: 0px
-    padding-bottom: 25px
+      padding-top: 0px
+      padding-bottom: 25px
 
   //Additional CSS assets
   .box
@@ -84,6 +88,6 @@
     height: 1px
     width: 75px
     border: 0
-    border-top: 1px solid #ccc
+    border-top: 1px solid #ffffff
     margin-left: auto
     margin-right: auto 

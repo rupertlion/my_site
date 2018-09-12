@@ -1,25 +1,26 @@
 = partial 'partials/navigation'
 
 .wrapper
-    .intro
-        .logo
-            .box
-                %img{:src => "images/rupert_logo.png"}
-            .tag
-                %h3 CREATE / SOLVE / INNOVATE
-            .aboutme
-                = partial 'partials/aboutme'
-        .face
-            %img{:src => "images/rupert_face.jpg"}
+    .gridmarginwrapper
+        .intro
+            .logo
+                .box
+                    %img{:src => "images/rupert_logo.png"}
+                .tag
+                    %h3 CREATE / SOLVE / INNOVATE
+                .aboutme
+                    = partial 'partials/aboutme'
+            .face
+                %img{:src => "images/rupert_face.jpg"}
 
-    .summary
-        = partial 'partials/summary'
+        .summary
+            = partial 'partials/summary'
 
-    .history
-        = partial 'partials/cv'
+        .history
+            = partial 'partials/cv'
 
-    .work
-        = partial 'partials/projects'
+        .work
+            = partial 'partials/projects'
 
-    .contact
-        = partial 'partials/contact'
+        .contact
+            = partial 'partials/contact'
