@@ -4,8 +4,7 @@
     .project_grid
         - data.projects.each do |project|
             .project_card{id:"#{project.id}"}
-                %h4= project[:role]
-                %h2= project[:description]
+                %h3= project[:description]
                 %img{src: project[:logo] }
                     #myprojectphoto
                         %img{src: project[:image] }

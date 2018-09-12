@@ -4,9 +4,7 @@
     .cv_grid
         - data.cv.each do |cv|
             .cv_card{id:"#{cv.id}"}
+                %h3= cv[:description]
                 %h4= cv[:role]
-                %h2= cv[:description]
-                %img{src: cv[:logo] }
-                    #mycvphoto
-                        %img{src: cv[:image] }
-                    %h3= cv[:years]
+                %img{src: cv[:image] }
+                %h3= cv[:years]
