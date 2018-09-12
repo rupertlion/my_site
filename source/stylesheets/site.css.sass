@@ -1,7 +1,130 @@
 .body
   margin: 0
 
-// Full size grid  
+// Small size grid 
+@media screen
+.wrapper
+  background-color: #000000
+  display: grid
+  grid-template-columns: auto
+  grid-template-rows: auto auto auto auto auto
+  grid-template-areas: "intro" "summaryintro" "summary" "history" "projects" "contact"
+  max-width: auto
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif
+  color: white
+
+  .gridmarginwrapper
+    margin-left: 40px
+    margin-right: 40px
+
+    .intro
+      grid-area: intro
+      display: grid
+      grid-template-columns: auto
+      grid-template-rows: 1fr 1fr
+      grid-template-areas: "logo" "face"
+      justify-items: center
+      margin-bottom: 30px
+
+      .logo
+        grid-area: logo
+        align-items: center
+        justify-items: center
+
+      .face
+        grid-area: face
+
+    .summary
+      grid-area: summary
+      display: grid
+      grid-template-columns: auto
+      grid-template-rows: 1fr
+      grid-template-areas: "sum1" "sum2" "sum3"
+      text-align: center
+      padding-top: 50px
+      padding-bottom: 25px
+
+      .skills
+        grid-area: sum1
+        text-align: center
+
+      .loves
+        grid-area: sum2
+        text-align: center
+
+      .passions
+        grid-area: sum3
+        text-align: center
+
+    .cv
+      grid-area: history
+      text-align: center
+      padding-top: 0px
+      padding-bottom: 25px
+      margin-bottom: 45px
+      margin-left: -40px
+      margin-right: -40px
+
+      .cv_grid
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr))
+
+        .cv_card
+          .hover-image
+            width: 100%
+            height: 100%
+            object-fit: cover
+
+    .projects
+      grid-area: projects
+      text-align: center
+      padding-top: 0px
+      padding-bottom: 25px
+      margin-left: -40px
+      margin-right: -40px
+
+      .project_grid
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr))
+
+        .project_card
+          img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            max-height: 240px
+            max-width: auto
+
+    .contact
+      grid-area: contact
+      text-align: center
+      padding-top: 0px
+      padding-bottom: 25px
+
+  //Additional CSS assets
+  .box
+    padding-top: 35px
+
+  .tag
+    padding-left: 10px
+
+  .aboutme
+    text-align: left
+    padding-left: 5px
+    padding-top: 45px
+
+  .linecenter
+    display: block
+    height: 1px
+    width: 75px
+    border: 0
+    border-top: 1px solid #ffffff
+    margin-left: auto
+    margin-right: auto 
+    padding-bottom: 35px
+
+// Full size grid 
+@media screen and (min-width: 1240px)
 .wrapper
   background-color: #000000
   display: grid
@@ -121,3 +244,5 @@
     margin-left: auto
     margin-right: auto 
     padding-bottom: 35px
+
+
