@@ -5,7 +5,5 @@
         - data.projects.each do |project|
             .project_card{id:"#{project.id}"}
                 %h3= project[:description]
-                %img{src: project[:logo] }
-                    #myprojectphoto
-                        %img{src: project[:image] }
-                    %h3= project[:years]
+                %a{:href => project[:url] }
+                    %img{:src => project[:image] }

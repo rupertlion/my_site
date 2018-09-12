@@ -55,7 +55,7 @@
   years: 2007 to 2008
 
 - id: cv_9
-  role: Senior Strategy Associate @ Spectrum Strategy Consultants
+  role: Senior Strategy Associate @ Spectrum Strategy
   description: Strategy consulting in media and digital
   # company logo:
   image: images/spectrum_background.jpg
@@ -63,7 +63,7 @@
 
 - id: cv_10
   role: Equity Analyst @ Morgan Stanley
-  description: Analyst in telecom tech for global investment bank
+  description: Telecom tech analyst for global investment bank
   # company logo: images/ms_logo.png
   image: images/ms_background.jpg
   years: 2004 to 2006
