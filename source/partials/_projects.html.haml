@@ -4,6 +4,11 @@
     .project_grid
         - data.projects.each do |project|
             .project_card{id:"#{project.id}"}
-                %h3= project[:description]
-                %a{:href => project[:url] }
-                    %img{:src => project[:image] }
+                .hover.effect-9
+                    .hover-image{:alt => "", :style => "background-image: url('#{project[:image]}')"}
+                        %h3.hover-title= project[:description]
+                        .hover-caption
+                            %h4= cv[:role]
+                            %p= cv[:years]
+
+-# %a{:href => project[:url] }
