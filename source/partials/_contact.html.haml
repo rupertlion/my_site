@@ -4,8 +4,17 @@
 
     // image with envelope logo
 
-    %h3 rupertlion@gmail.com
-    // need to change to hyperlink / mailto:
+    %form{:name => "contact", :netlify => ""}
+    %p
+        %label
+        Name
+        %input{:name => "name", :type => "text"}/
+    %p
+        %label
+        Email
+        %input{:name => "email", :type => "email"}/
+    %p
+        %button{:type => "submit"} Send
 
 
     // logos and links for social media
