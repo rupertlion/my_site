@@ -2,8 +2,6 @@
     %h2 CONTACT
     .linecenter
 
-    // image with envelope logo
-
     %form{:name => "contact", :netlify => ""}
     %p
         %label
@@ -16,5 +14,13 @@
     %p
         %button{:type => "submit"} Send
 
-
-    // logos and links for social media
+.contact_grid
+    .social
+        %a{href: "https://www.linkedin.com/in/rupertlion/" }
+            %img(src="/images/linkedin.png")
+        %a{href: "https://www.facebook.com/rupert.lion.7" }
+            %img(src="/images/facebook.png")
+        %a{href: "https://twitter.com/rupertlion" }
+            %img(src="/images/twitter.png")
+        %a{href: "https://www.instagram.com/thetribalapp/?hl=en)" }
+            %img(src="/images/instagram.png")
