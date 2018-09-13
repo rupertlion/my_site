@@ -99,7 +99,21 @@ body
       grid-area: contact
       text-align: center
       padding-top: 0px
-      padding-bottom: 25px
+      padding-bottom: 0px
+      margin-bottom: 0px
+      margin-left: 0px
+      margin-right: 0px
+
+    .contact_grid
+      display: grid
+      grid-template-columns: repeat(auto-fill, minmax(100%, 3fr))
+
+      .social
+        img
+          width: 64px
+          height: 64px
+          object-fit: cover
+          padding: 10px
 
   .aboutme
     text-align: left
