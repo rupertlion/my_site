@@ -7,14 +7,14 @@
 
 - id: cv_2
   role: Director, North Europe @ The Up Group
-  description: Leading North Europe region in top tier digital executive search
+  description: Leading North Europe in top tier digital executive search
   # company logo: images/upgroup_logo.png
   image: images/upgroup_background.jpg
   years: 2017 to 2018
 
 - id: cv_3
   role: Consultant @ Renovata Partners
-  description: Leading Stockholm office for digital executive search business
+  description: Digital executive search in Stockholm and London
   # company logo: images/renovata_logo.png
   image: images/renovata_background.jpg
   years: 2014 to 2017

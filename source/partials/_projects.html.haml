@@ -6,9 +6,7 @@
             .project_card{id:"#{project.id}"}
                 .hover.effect-9
                     .hover-image{:alt => "", :style => "background-image: url('#{project[:image]}')"}
-                        %h3.hover-title= project[:name]
+                        %a{:href => project[:url] }
+                            %h3.hover-title= project[:name]
                         .hover-caption
                             %h4= project[:description]
-
--# code to add for hyperlinks
--# %a{:href => project[:url] }
