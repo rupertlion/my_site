@@ -20,11 +20,11 @@ body
     .intro
       grid-area: intro
       display: grid
-      grid-template-columns: auto
+      grid-template-columns: 100%
       grid-template-rows: 1fr 1fr
       grid-template-areas: "logo" "face"
       justify-items: center
-      margin-bottom: 120px
+      margin-bottom: 0px
 
       .logo
         grid-area: logo
@@ -33,6 +33,9 @@ body
 
       .face
         grid-area: face
+        img
+          width: 100%
+          height: auto
 
     .summary
       grid-area: summary
@@ -41,8 +44,8 @@ body
       grid-template-rows: 1fr
       grid-template-areas: "sum1" "sum2" "sum3"
       text-align: center
-      padding-top: 50px
-      padding-bottom: 25px
+      padding-top: 0px
+      padding-bottom: 0px
 
       .skills
         grid-area: sum1
@@ -67,7 +70,7 @@ body
 
       .cv_grid
         display: grid
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr))
+        grid-template-columns: repeat(auto-fill, minmax(360px, 1fr))
 
         .cv_card
           .hover-image
@@ -85,7 +88,7 @@ body
 
       .project_grid
         display: grid
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr))
+        grid-template-columns: repeat(auto-fill, minmax(360px, 1fr))
 
         .project_card
           img
@@ -100,12 +103,34 @@ body
       padding-bottom: 25px
 
 @media screen and (max-width: 640px)
-  .hover .effect-9
-    width: 72%
+  .cv_grid
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax(640px, 1fr))
+
+  .project_grid
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax(640px, 1fr))
+
 
 @media screen and (max-width: 480px)
-  .hover .effect-9
-    width: 92%
+  .cv_grid
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax(480px, 1fr))
+
+  .project_grid
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax(480px, 1fr))
+
+
+@media screen and (max-width: 375px)
+  .cv_grid
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax(375px, 1fr))
+
+  .project_grid
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax(375px, 1fr))
+
 
 // Full size grid 
 @media screen and (min-width: 1240px)
