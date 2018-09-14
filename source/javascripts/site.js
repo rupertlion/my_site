@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.homebtn').addEventListener('click', () => {
         ;
         scrollIt(
-            document.querySelector('.homesection'),
+            document.querySelector('.introsection'),
             300,
             'easeInOutCubic',
             () => console.log(`Just finished scrolling to ${window.pageYOffset}px`)
@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.contactbtn').addEventListener('click', () => {
         ;
         scrollIt(
-            document.querySelector('.contactsection'),
+            10000,
             300,
             'easeInQuad',
             () => console.log(`Just finished scrolling to ${window.pageYOffset}px`)

@@ -12,17 +12,17 @@ body
   color: white
   margin: 0px
 
-  .nav
-    background-color: #000000
-    padding-top: 10px
-    padding-left: 7px
-    position: fixed
-    overflow: hidden
-    width: 100%
-
   .gridmarginwrapper
     margin-left: 0px
     margin-right: 0px
+
+    .nav
+      background-color: #000000
+      padding-top: 10px
+      padding-left: 7px
+      position: fixed
+      overflow: hidden
+      width: 100%
 
     .intro
       grid-area: intro
@@ -45,28 +45,6 @@ body
         img
           width: 100%
           height: auto
-
-    .summary
-      grid-area: summary
-      display: grid
-      grid-template-columns: auto
-      grid-template-rows: 1fr
-      grid-template-areas: "sum1" "sum2" "sum3"
-      text-align: center
-      padding-top: 0px
-      padding-bottom: 0px
-
-      .skills
-        grid-area: sum1
-        text-align: center
-
-      .loves
-        grid-area: sum2
-        text-align: center
-
-      .passions
-        grid-area: sum3
-        text-align: center
 
     .education
       grid-area: education
@@ -176,15 +154,23 @@ body
     background-color: #000000
     display: grid
     grid-template-columns: auto
-    grid-template-rows: auto auto auto auto auto
-    grid-template-areas: "intro" "education" "history" "projects" "contact"
+    grid-template-rows: auto auto auto auto auto auto
+    grid-template-areas: "nav" "intro" "education" "history" "projects" "contact"
     max-width: auto
     font-family: -apple-system, BlinkMacSystemFont, sans-serif
     color: white
 
     .gridmarginwrapper
-      margin-left: 40px
-      margin-right: 40px
+      margin-left: 0px
+      margin-right: 0px
+
+      .nav
+        background-color: #000000
+        padding-top: 10px
+        padding-left: 7px
+        position: fixed
+        overflow: hidden
+        width: 100%
 
       .intro
         grid-area: intro
@@ -232,8 +218,8 @@ body
         padding-top: 0px
         padding-bottom: 25px
         margin-bottom: 45px
-        margin-left: -40px
-        margin-right: -40px
+        margin-left: 0px
+        margin-right: 0px
 
         .education_grid
           display: grid
@@ -251,8 +237,8 @@ body
         padding-top: 0px
         padding-bottom: 25px
         margin-bottom: 45px
-        margin-left: -40px
-        margin-right: -40px
+        margin-left: 0px
+        margin-right: 0px
 
         .cv_grid
           display: grid
@@ -269,8 +255,8 @@ body
         text-align: center
         padding-top: 0px
         padding-bottom: 25px
-        margin-left: -40px
-        margin-right: -40px
+        margin-left: 0px
+        margin-right: 0px
 
         .project_grid
           display: grid
