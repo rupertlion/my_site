@@ -604,5 +604,11 @@ flexCenter,
         -ms-transform: scale(1);
             transform: scale(1);
   }
-  
+
+@media screen and (max-width: 800px) {
+  .hover.effect-9 .hover-caption {
+    opacity: 1;
+  }
+}
+
   /*# sourceMappingURL=hover.css.map */
