@@ -1,7 +1,7 @@
 .wrapper
-    .nav
-        = partial 'partials/navigation'
     .gridmarginwrapper
+        .nav
+            = partial 'partials/navigation'
         .intro.introsection
             .logo
                 .box
@@ -12,6 +12,9 @@
                     = partial 'partials/aboutme'
             .face
                 %img{:src => "images/rupert_face.jpg"}
+
+        .education.educationsection
+            = partial 'partials/education'
 
         .history.historysection
             = partial 'partials/cv'

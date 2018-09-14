@@ -1,0 +1,12 @@
+.education
+    %h2 MY EDUCATION
+    .linecenter
+    .education_grid
+        - data.education.each do |education|
+            .education_card{id:"#{education.id}"}
+                .hover.effect-9
+                    .hover-image{:alt => "", :style => "background-image: url('#{education[:image]}')"}
+                        %h2.hover-title= education[:school]
+                        .hover-caption
+                            %h4= education[:qualification]
+                            %p= education[:years]

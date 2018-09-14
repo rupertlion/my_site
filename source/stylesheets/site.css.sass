@@ -5,24 +5,24 @@ body
 .wrapper
   display: grid
   grid-template-columns: auto
-  grid-template-rows: auto auto auto auto auto
-  grid-template-areas: "nav" "intro" "summaryintro" "summary" "history" "projects" "contact"
+  grid-template-rows: auto auto auto auto auto auto
+  grid-template-areas: "nav" "intro" "education" "history" "projects" "contact"
   max-width: auto
   font-family: -apple-system, BlinkMacSystemFont, sans-serif
   color: white
   margin: 0px
 
-  .nav
-    background-color: #000000
-    padding-top: 10px
-    padding-left: 7px
-    position: fixed
-    overflow: hidden
-    width: 100%
-
   .gridmarginwrapper
     margin-left: 0px
     margin-right: 0px
+
+    .nav
+      background-color: #000000
+      padding-top: 10px
+      padding-left: 7px
+      position: fixed
+      overflow: hidden
+      width: 100%
 
     .intro
       grid-area: intro
@@ -46,28 +46,25 @@ body
           width: 100%
           height: auto
 
-    .summary
-      grid-area: summary
-      display: grid
-      grid-template-columns: auto
-      grid-template-rows: 1fr
-      grid-template-areas: "sum1" "sum2" "sum3"
+    .education
+      grid-area: education
       text-align: center
       padding-top: 0px
-      padding-bottom: 0px
+      padding-bottom: 25px
+      margin-bottom: 45px
+      margin-left: 0px
+      margin-right: 0px
 
-      .skills
-        grid-area: sum1
-        text-align: center
+      .education_grid
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr))
 
-      .loves
-        grid-area: sum2
-        text-align: center
-
-      .passions
-        grid-area: sum3
-        text-align: center
-
+        .education_card
+          .hover-image
+            width: 100%
+            height: 100%
+            object-fit: cover
+    
     .cv
       grid-area: history
       text-align: center
@@ -157,15 +154,23 @@ body
     background-color: #000000
     display: grid
     grid-template-columns: auto
-    grid-template-rows: auto auto auto auto auto
-    grid-template-areas: "intro" "summaryintro" "summary" "history" "projects" "contact"
+    grid-template-rows: auto auto auto auto auto auto
+    grid-template-areas: "nav" "intro" "education" "history" "projects" "contact"
     max-width: auto
     font-family: -apple-system, BlinkMacSystemFont, sans-serif
     color: white
 
     .gridmarginwrapper
-      margin-left: 40px
-      margin-right: 40px
+      margin-left: 0px
+      margin-right: 0px
+
+      .nav
+        background-color: #000000
+        padding-top: 10px
+        padding-left: 7px
+        position: fixed
+        overflow: hidden
+        width: 100%
 
       .intro
         grid-area: intro
@@ -207,14 +212,33 @@ body
           grid-area: sum3
           text-align: center
 
+      .education
+        grid-area: education
+        text-align: center
+        padding-top: 0px
+        padding-bottom: 25px
+        margin-bottom: 45px
+        margin-left: 0px
+        margin-right: 0px
+
+        .education_grid
+          display: grid
+          grid-template-columns: repeat(auto-fill, minmax(400px, 1fr))
+
+          .education_card
+            .hover-image
+              width: 100%
+              height: 100%
+              object-fit: cover
+  
       .cv
         grid-area: history
         text-align: center
         padding-top: 0px
         padding-bottom: 25px
         margin-bottom: 45px
-        margin-left: -40px
-        margin-right: -40px
+        margin-left: 0px
+        margin-right: 0px
 
         .cv_grid
           display: grid
@@ -231,8 +255,8 @@ body
         text-align: center
         padding-top: 0px
         padding-bottom: 25px
-        margin-left: -40px
-        margin-right: -40px
+        margin-left: 0px
+        margin-right: 0px
 
         .project_grid
           display: grid
