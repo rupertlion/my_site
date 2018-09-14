@@ -1,0 +1,17 @@
+- id: edu_1
+  qualification: Chartered Accountancy (ACA)
+  school: ICAEW
+  image: images/tribal_background.jpg
+  years: 2001 to 2004
+
+- id: edu_2
+  qualification: MA, Experimental Psychology
+  school: Oxford University
+  image: images/tribal_background.jpg
+  years: 1998 to 2001
+
+- id: edu_3
+  qualification: A-Levels (3 As)
+  school: Harrow School
+  image: images/tribal_background.jpg
+  years: 1993 to 1998
