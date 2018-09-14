@@ -5,8 +5,8 @@ body
 .wrapper
   display: grid
   grid-template-columns: auto
-  grid-template-rows: auto auto auto auto auto
-  grid-template-areas: "nav" "intro" "summaryintro" "summary" "history" "projects" "contact"
+  grid-template-rows: auto auto auto auto auto auto
+  grid-template-areas: "nav" "intro" "education" "history" "projects" "contact"
   max-width: auto
   font-family: -apple-system, BlinkMacSystemFont, sans-serif
   color: white
@@ -68,6 +68,25 @@ body
         grid-area: sum3
         text-align: center
 
+    .education
+      grid-area: education
+      text-align: center
+      padding-top: 0px
+      padding-bottom: 25px
+      margin-bottom: 45px
+      margin-left: 0px
+      margin-right: 0px
+
+      .education_grid
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr))
+
+        .education_card
+          .hover-image
+            width: 100%
+            height: 100%
+            object-fit: cover
+    
     .cv
       grid-area: history
       text-align: center
@@ -158,7 +177,7 @@ body
     display: grid
     grid-template-columns: auto
     grid-template-rows: auto auto auto auto auto
-    grid-template-areas: "intro" "summaryintro" "summary" "history" "projects" "contact"
+    grid-template-areas: "intro" "education" "history" "projects" "contact"
     max-width: auto
     font-family: -apple-system, BlinkMacSystemFont, sans-serif
     color: white
@@ -207,6 +226,25 @@ body
           grid-area: sum3
           text-align: center
 
+      .education
+        grid-area: education
+        text-align: center
+        padding-top: 0px
+        padding-bottom: 25px
+        margin-bottom: 45px
+        margin-left: -40px
+        margin-right: -40px
+
+        .education_grid
+          display: grid
+          grid-template-columns: repeat(auto-fill, minmax(400px, 1fr))
+
+          .education_card
+            .hover-image
+              width: 100%
+              height: 100%
+              object-fit: cover
+  
       .cv
         grid-area: history
         text-align: center

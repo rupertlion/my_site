@@ -86,6 +86,16 @@ document.addEventListener('DOMContentLoaded', () => {
         );
     });
 
+    document.querySelector('.educationbtn').addEventListener('click', () => {
+        ;
+        scrollIt(
+            document.querySelector('.educationsection'),
+            300,
+            'easeInOutCubic',
+            () => console.log(`Just finished scrolling to ${window.pageYOffset}px`)
+        );
+    });
+
     document.querySelector('.historybtn').addEventListener('click', () => {
         ;
         scrollIt(
