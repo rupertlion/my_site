@@ -36,7 +36,20 @@ The purpose of this lab is to create an individual portfolio site that will show
     Create two sections: summary and interests
     Use navigation (see below) to navigate to "About Me" section of the page
   ```
-    
+
+* **PRESENT INFORMATION ABOUT MY EXPERIENCE TO DATE:** 
+
+  ```
+  As a user
+  In order to understand what roles and education Rupert Lion has had
+  I would like to be able to view a list of his previous education and roles
+
+  Tasks:
+    Create a "CV" section in the site
+    Create sections for each previous job: role, organisation and year
+    Use navigation (see below) to navigate to "CV" section of the page
+  ```
+  
 * **PRESENT INFORMATION ABOUT MY WORK TO DATE:** 
 
   ```
@@ -45,7 +58,7 @@ The purpose of this lab is to create an individual portfolio site that will show
   I would like to be able to view a list of his previous project work
 
   Tasks:
-    Create a "Portfolio" section in the site
+    Create a "Project" section in the site
     Create two sections to each project: name and project summary
     Use navigation (see below) to navigate to "Portfolio" section of the page
   ```
